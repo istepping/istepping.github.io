@@ -1,13 +1,13 @@
-# 模板
->要求:
-
->示例:
-
->代码思路: 
-
-```
- 
-```
+---
+layout:     post
+title:      leetcode
+subtitle:   8.atoi函数的实现
+date:       2018-11-16
+author:     istepping
+header-img: img/home_bg1.jpg
+catalog: true
+tags:
+---
 # 8.atoi函数的实现
 >要求:输入字符串，提取最前面的数字部分，并转换为int型
 
