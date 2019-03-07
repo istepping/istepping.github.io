@@ -4,107 +4,20 @@ title: "About"
 description: "istepping"
 header-img: "img/post-bg-rwd.jpg"
 ---
-
-<!-- Language Selector -->
-<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英文 English </option>
-</select> -->
-
-<!-- Chinese Version -->
 <div>
-    <h1 style="text-align: center;font-family: 华文新魏,serif;">关于我</h1>
-    <p style="text-align: center;font-family: 华文行楷,sans-serif;font-size: 20pt;">&nbsp;&nbsp;大家好，我叫孙磊，大连理工大学软件学院，软件工程专业，本科在读。</p>
-    <p style="text-align: center;font-family: 华文行楷,sans-serif;font-size: 20pt;">喜欢Java技术和安卓开发。欢迎交流。</p>
-    <!--copied from markdown -->
-    <!--<blockquote><p>冰冻三尺 非一日之寒<br>-->
-    <!--积土成山 非斯须之作</p></blockquote>-->
-
-    <!--<p>Hey，我是<strong>柏荧(BY)</strong>，一只iOS程序猿，现在厦门工作。</p>-->
-
-    <!--<p>工作、学习之余，我还是一个健身爱好者，同时也非常喜欢拳击。</p>-->
-
-    <!--<p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/qiubaiying">👉GitHub·BY</a> 与 简书主页<a href="https://http://www.jianshu.com/u/e71990ada2fd">👉BY</a>。如果有什么问题，欢迎提出探讨~</p>-->
-
-    <!--<p></p>-->
-    <!---->
-    <!--<h5>Talks</h5>-->
-    <ul>
-        <!--<li><a href="https://github.com">GitHub</a></li>-->
-        <!--<li><a href="http://jekyll.com.cn/">jekyll</a></li>-->
-        <!--<li><a href="http://huangxuan.me/">Hux</a></li> -->
-        <!--<li><a href="https://analytics.google.com/analytics">Google Analytics</a></li>-->
-    </ul>
+    <h1 style="text-align: center;font-family: 华文新魏,serif;">关于我们</h1>
+    <p style="text-align: center;font-family: 华文行楷,sans-serif;font-size: 20pt;">
+        &nbsp;&nbsp;我们的团队由三人组成，各自擅长不同的领域，分工明确，各司其职，是一个年轻，朝气，充满激情和拼搏精神的团队。
+    </p>
+    <h1 style="text-align: center;font-family: 华文新魏,serif;">团队成员</h1>
+    <p style="text-align: left;margin-left:120pt;font-family: 华文中宋,sans-serif;font-size: 14pt;">孙&nbsp;&nbsp;&nbsp;磊: 队长，首席技术官，主要负责项目的技术工作，并对各个队员进行相应的技术指导</p>
+    <p style="text-align: left;margin-left:120pt;font-family: 华文中宋,sans-serif;font-size: 14pt;">姜志刚: 队员，设计师，主要负责网页的设计和美工，对项目的各个部分的美化提出建议并实现</p>
+    <p style="text-align: left;margin-left:120pt;font-family: 华文中宋,sans-serif;font-size: 14pt;">张兴邦: 队员，策划师，主要负责提出项目设计，实施方案以及各种创新建议</p>
 </div>
-
-<!-- English Version -->
-<!-- <div class="en post-container">
-    <blockquote><p>Yet another iOS Developer. <br>
-    Yet another Life-long Student.</p></blockquote>
-
-    <p>Hi, I am <strong>Baiying Qiu</strong>，you can call me <strong>BY</strong>. I am an iOS software engineer and currently working in Xiamen</p>
-
-    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/qiubaiying">Github·BY</a>.</p>
-    
-    <p>I am a sports enthusiast, I like fitness, running and boxing.</p>
-
-    <h5>Talks</h5>
-
-    <ul>
-    <li><a href="https://github.com">GitHub</a></li>
-    <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-    <li><a href="https://pages.github.com/">GitHub Pages</a></li>
-    <li><a href="https://qiubaiying.github.io">BY</a></li>
-    </ul>
-</div> -->
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
-
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
-
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
-
-    // init
-    _render();
-</script>
-
 
 <!-- Gitalk 评论 start  -->
 {% if site.gitalk.enable %}
 <!-- Gitalk link  -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-
 <div id="gitalk-container"></div>
     <script type="text/javascript">
     var gitalk = new Gitalk({
