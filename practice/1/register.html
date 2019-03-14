@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="register.css"/>
+    <script type="text/javascript" src="register.js"></script>
+</head>
+
+<body>
+  <div class="head">
+      <img src="../images/head.jpg" style="width: 100%; height: 100%;"/>
+  </div>
+  <div class="register">
+      <p class="notification">以下均为必填项</p>
+      <form class="register_form" method="post" action="home/homework.html">
+          <table>
+              <tr>
+                  <td class="table">请填写您的Email地址:</td>
+                  <td class="user_input">
+                      <input title="" class="input_content"  id="input_email" type="email" onblur="checkEmail()"/>
+                  </td>
+                  <td>
+                      <div class="right_text" id="text_email"></div>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="table">请填写您在当当网的呢称:</td>
+                  <td class="user_input">
+                      <input title="" class="input_content"  id="input_nickName" type="text" onblur="checkNickName()"/>
+                  </td>
+                  <td>
+                      <div class="right_text" id="text_nickName"></div>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="table">设置密码:</td>
+                  <td class="user_input">
+                      <input title="" class="input_content"  id="input_password" type="password" onblur="checkPassword()"/>
+                  </td>
+                  <td>
+                      <div class="right_text" id="text_password"></div>
+                  </td>
+              </tr>
+              <tr>
+                  <td class="table">再次输入您设置的密码:</td>
+                  <td class="user_input">
+                      <input title="" class="input_content"  id="input_password_again" type="password" onblur="checkPasswordAgain()"/>
+                  </td>
+                  <td>
+                      <div class="right_text" id="text_password_again"></div>
+                  </td>
+              </tr>
+          </table>
+          <div class="register_bottom">
+              <label>
+                  <input type="checkbox" onclick="if (this.checked) {enable()} else {disable()}">
+              </label>
+              <div>我已阅读并同意《</div>
+              <a class="user_protocol" href="https://www.baidu.com">当当网交易条款</a>
+              <div>》和《</div>
+              <a class="user_protocol" href="https://www.baidu.com">当当网用户使用条款</a><div>》</div>
+          </div>
+          <input class="form_button" type="reset" value="重置">
+          <input id="submit_button" class="form_button" disabled="disabled" type="submit" value="提交">
+      </form>
+  </div>
+  <div class="foot">
+      <img src="../images/foot.jpg" style="width: 100%; height: 100%;">
+  </div>
+</body>
+</html>

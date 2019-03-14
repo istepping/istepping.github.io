@@ -1,0 +1,169 @@
+#header{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#menu{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: url("menu_bg.gif");
+    width: 51.7%;
+    height: 20px;
+    margin-left: 363px;
+}
+#background_1{
+    float: left;
+    background: url("background_1.png");
+    background-size: contain;
+    margin-left: 363px;
+    width: 578px;
+    height: 122px;
+}
+#background_2{
+    float: left;
+    background: url("logon_bg.jpg");
+    margin-left: 0px;
+    width: 198px;
+    height: 122px;
+}
+#background_3{
+    /*float: left;*/
+    background: url("head_column_bg.jpg");
+    margin-left: 363px;
+    margin-top: 122px;
+    width: 578px;
+    height: 30px;
+    font-family: "仿宋";
+    font-size: 14px;
+    color: dimgrey;
+    /*vertical-align:middle;*/
+    text-indent: 10px;
+    border: gray;
+    /*padding: 2px;*/
+    /*overflow:hidden;*/
+}
+#background_4{
+    float: left;
+    background: url("relation.jpg");
+    margin-top: -30px;
+    height: 30px;
+    margin-left: 950px;
+    width: 198px
+}
+#background_5{
+    margin-left: 363px;
+    width: 578px;
+}
+#background_6{
+    margin-left: 950px;
+    margin-top: -580px;
+    width: 198px
+}
+#background_7{
+    background: url("footer_bg_line.gif");
+    margin-left: 363px;
+    margin-top: 0px;
+    width: 776px;
+    height: 20px;
+}
+#background_8{
+    background: gainsboro;
+    margin-left: 941px;
+    margin-top: 0px;
+    width: 198px;
+    height: 250px;
+}
+#s1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+/*#background_3 p{*/
+    /*font-family: "宋体";*/
+    /*font-size: 14px;*/
+    /*color: gray;*/
+    /*display: inline-block;*/
+    /*vertical-align:middle;*/
+    /*text-indent: 5px;*/
+/*}*/
+.note{
+    color: red;
+}
+.note span{
+    font-size: 12px;
+    font-family: 仿宋;
+    color: dimgray;
+}
+.note2{
+    font-size: 12px;
+    font-family: 仿宋;
+    color: dimgray;
+}
+.note3{
+    font-size: 12px;
+    font-family: 仿宋;
+    color: dimgray;
+    text-indent: 10px;
+}
+.note4{
+    list-style: none;
+    font-size: 14px;
+    font-family: 仿宋;
+    color: dimgray;
+    float: left;
+}
+.tips{
+    list-style: none;
+    font-size: 14px;
+    font-family: 仿宋;
+    color: dimgray;
+    text-align: center;
+}
+#img_1{
+    margin-left: 20px;
+}
+#img_2{
+    margin-left: 12px;
+}
+#img_3{
+     margin-left: 12px;
+ }
+#img_4{
+    margin-left: 12px;
+}
+#img_5{
+    margin-left: 12px;
+}
+#img_6{
+    margin-left: 12px;
+}
+#img_7{
+     margin-left: 12px;
+ }
+#img_9{
+    margin-left: 12px;
+    margin-top: 10px;
+}
+#img_10{
+    margin-left: 12px;
+    margin-top: 10px;
+}
+#img_11{
+    margin-left: 12px;
+    margin-top: 10px;
+}
+#img_12{
+    margin-left: 10px;
+    margin-top: 0px;
+}
+#img_14{
+    margin-left: 10px;
+    margin-top: 0px;
+}
+#img_15{
+    margin-left: 10px;
+    margin-top: 0px;
+}
+#input_1{
+    margin-left: 36px;
+}

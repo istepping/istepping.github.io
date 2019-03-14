@@ -1,0 +1,67 @@
+.head{
+    width: 100%;
+    height: 15%;
+}
+.register{
+    width: 100%;
+    height: 90%;
+    border: 1px solid #989898;
+}
+.notification{
+    margin-top: 1px;
+    margin-left: 1px;
+    font-weight: 600;
+    font-size: 14px;
+    color: red;
+}
+.table{
+    width: 20%;
+    height: 8%;
+    background-color: #d7ffec;
+    text-align: right;
+}
+.user_input{
+    width: 20%;
+}
+.input_content{
+    margin-left: 20pt;
+}
+.right_text{
+    margin-left: 10pt;
+    color: red;
+}
+.register_bottom{
+    margin-top: 10pt;
+    width: 100%;
+    height: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    margin-bottom: 10pt;
+}
+.user_protocol{
+    color: #0033FF;
+}
+.form_button{
+    width: 95pt;
+    height: 20pt;
+    margin-top: 10pt;
+    background-image: url("../images/register_submit.gif");
+    margin-left: 95pt;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 0px;
+    border: 0px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.foot{
+    width: 100%;
+    height: 10%;
+}
