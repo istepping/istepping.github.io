@@ -2,16 +2,16 @@
 <HTML>
 <HEAD>
 
-<TITLE>Í¼Æ¬´úÌæ°´Å¥Ìá½»</TITLE> 
+<TITLE>å›¾ç‰‡ä»£æ›¿æŒ‰é’®æäº¤</TITLE> 
 
-<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
 <LINK rel="stylesheet" type="text/css" href="../css/public.css">
 
 
 <LINK rel="stylesheet" type="text/css" href="../css/public.css">  
 <STYLE type="text/css">
 td{ font-size:12px; font-family:Verdana}
-.lefttd {text-align:right; padding-right:20px; font-family:"ĞÂËÎÌå"}
+.lefttd {text-align:right; padding-right:20px; font-family:"æ–°å®‹ä½“"}
 a {text-decoration:none; font-size:12px; color:#0000FF}
 a:hover {text-decoration:underline; font-size:12px; color:#FF0000}
 
@@ -41,27 +41,27 @@ a:hover {text-decoration:underline; font-size:12px; color:#FF0000}
 </STYLE>
 
 <SCRIPT type="text/javascript">
-//ĞèÒªÔÙ´ÎÌîĞ´jsÄÚÈİ
+//éœ€è¦å†æ¬¡å¡«å†™jså†…å®¹
 function checkLogin() {
     var QQcode = document.getElementsByName('txtCode');
     console.log(QQcode[0].value);
     if (QQcode[0].value == "" || QQcode[0].value.length == 0) {
-        alert("ÇëÊäÈëQQºÅÂë");
+        alert("è¯·è¾“å…¥QQå·ç ");
         return false;
     }
     var QQpass = document.getElementsByName('txtPass');
     if (QQpass[0].value == "" || QQpass[0].value.length == 0) {
-        alert("ÇëÊäÈëQQÃÜÂë");
+        alert("è¯·è¾“å…¥QQå¯†ç ");
         return false;
     }
     var verify = document.getElementsByName('txtVerify');
     var verReg = /[a-z]{4}/i;
     if(!verReg.test(verify[0].value)){
-        alert("ÑéÖ¤Âë¸ñÊ½´íÎó£¡");
+        alert("éªŒè¯ç æ ¼å¼é”™è¯¯ï¼");
         return false;
     }
     if (verify[0].value!="cmmz") {
-        alert("ÑéÖ¤Âë´íÎó£¡");
+        alert("éªŒè¯ç é”™è¯¯ï¼");
         return false;
     }
 }
@@ -80,25 +80,25 @@ function checkLogin() {
       <TD width="418" style="padding-top:30px">
         <TABLE width="381" cellpadding="0" cellspacing="0" class="loginMain" align="center">
           <TR>
-            <TD colspan="2" height="27" class="loginHead">ÅÄÅÄÓÃ»§µÇÂ½</TD>
+            <TD colspan="2" height="27" class="loginHead">æ‹æ‹ç”¨æˆ·ç™»é™†</TD>
        </TR>
           <TR>
-            <TD width="97" class="lefttd">QQºÅÂë:</TD>
+            <TD width="97" class="lefttd">QQå·ç :</TD>
         <TD width="282">
-          <INPUT type="text" class="inputMain"  name="txtCode"> <A href="#" >Íü¼ÇQQºÅÂë&gt;&gt;</A></TD>
+          <INPUT type="text" class="inputMain"  name="txtCode"> <A href="#" >å¿˜è®°QQå·ç &gt;&gt;</A></TD>
        </TR>
           <TR>
-            <TD class="lefttd">QQÃÜÂë:</TD>
-	    <TD><INPUT type="password" class="inputMain" name="txtPass" >	<A href="#">Íü¼ÇÃÜÂë&gt;&gt;</A></TD>
+            <TD class="lefttd">QQå¯†ç :</TD>
+	    <TD><INPUT type="password" class="inputMain" name="txtPass" >	<A href="#">å¿˜è®°å¯†ç &gt;&gt;</A></TD>
 	   </TR>
           <TR>
-            <TD width="97" class="lefttd">ÑéÖ¤Âë:</TD>
+            <TD width="97" class="lefttd">éªŒè¯ç :</TD>
         <TD width="282">
-			<INPUT type="text" class="inputMain" name="txtVerify" value="ÇëÊäÈëÏÂÍ¼ÏÔÊ¾µÄÎÄ×Ö" onFocus="this.value=''">
+			<INPUT type="text" class="inputMain" name="txtVerify" value="è¯·è¾“å…¥ä¸‹å›¾æ˜¾ç¤ºçš„æ–‡å­—" onFocus="this.value=''">
 		 </TD>
        </TR>
           <TR><TD height="42">&nbsp;</TD>
-       <TD ><A href="#" >¿´²»Çå£¬»»Ò»ÕÅ </A></TD></TR>
+       <TD ><A href="#" >çœ‹ä¸æ¸…ï¼Œæ¢ä¸€å¼  </A></TD></TR>
           <TR><TD height="71" colspan="2" align="center"><IMG src="images/code.jpg"></TD></TR>
           <TR><TD colspan="2" align="center"><input type="image" src="images/login_submit.gif"></TD></TR>
           </TABLE>     

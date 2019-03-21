@@ -1,7 +1,7 @@
 <HTML>
 <HEAD>
-<META http-equiv="Content-Type" content="text/html; charset=gb2312">
-<TITLE>ÓÃ»§×¢²á</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<TITLE>ç”¨æˆ·æ³¨å†Œ</TITLE>
 <STYLE type="text/css">
 td{font-size:12px}
 h1{ font-size:12px;background:#F4FBFF}
@@ -12,61 +12,61 @@ a:hover{text-decoration:underline; color:#FF6633}
 .STYLE1 {color: #FF0000}
 </STYLE>
 <SCRIPT>
-//ĞèÒªÔÚ´ËÌîĞ´
+//éœ€è¦åœ¨æ­¤å¡«å†™
 	function checkForm() {
 		var username = document.getElementsByName('txtUser');
 		var usernameReq = /\w{4,16}/;
 		//console.log(username[0].value);
 		if (username[0].value == "" || username[0].value.length == 0) {
-			alert("ÇëÊäÈëÓÃ»§Ãû£¡");
+			alert("è¯·è¾“å…¥ç”¨æˆ·åï¼");
 			return false;
 		}
 		if (!usernameReq.test(username[0].value)) {
-			alert("ÓÃ»§Ãû¸ñÊ½²»ÕıÈ·£¡");
+			alert("ç”¨æˆ·åæ ¼å¼ä¸æ­£ç¡®ï¼");
 			return false;
 		}
 		var password1 = document.getElementsByName('txtPass');
 		var passwordReq = /[a-zA-Z0-9]{6,16}/;
 		if (password1[0].value == "" || password1[0].value.length == 0) {
-			alert("ÇëÊäÈëÃÜÂë");
+			alert("è¯·è¾“å…¥å¯†ç ");
 			return false;
 		}
 		if (!passwordReq.test(password1[0].value)) {
-			alert("ÃÜÂë¸ñÊ½²»ÕıÈ·!");
+			alert("å¯†ç æ ¼å¼ä¸æ­£ç¡®!");
 			return false;
 		}
 		var password2 = document.getElementsByName('txtRPass')
 		if (password2[0].value == "" || password2[0].value.length == 0) {
-				alert("ÇëÔÙ´ÎÊäÈëÃÜÂë");
+				alert("è¯·å†æ¬¡è¾“å…¥å¯†ç ");
 				return false;
 			}
 		if (password1[0].value != password2[0].value) {
-				alert("Á½´ÎÊäÈëµÄÃÜÂë²»Ò»ÖÂ");
+				alert("ä¸¤æ¬¡è¾“å…¥çš„å¯†ç ä¸ä¸€è‡´");
 				return false;
 			}
 		var birthday = document.getElementsByName('txtBirth');
 		var birthdayReq = /[1-9]\d{3}[-]\d{2}[-]\d{2}/;
 		if (birthday[0].value == "" || birthday[0].value.length == 0) {
-			alert("ÇëÊäÈë³öÉúÈÕÆÚ");
+			alert("è¯·è¾“å…¥å‡ºç”Ÿæ—¥æœŸ");
 			return false;
 		}
 		if (!birthdayReq.test(birthday[0].value)) {
-			alert("³öÉúÈÕÆÚ¸ñÊ½²»ÕıÈ·!");
+			alert("å‡ºç”Ÿæ—¥æœŸæ ¼å¼ä¸æ­£ç¡®!");
 			return false;
 		}
 		var email = document.getElementsByName('txtEmail');
 		var emailReq =  /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
 		if (email[0].value == "" || email[0].value.length == 0) {
-				alert("ÇëÊäÈëµç×ÓÓÊ¼şµØÖ·");
+				alert("è¯·è¾“å…¥ç”µå­é‚®ä»¶åœ°å€");
 				return false;
 			}
 		if (!emailReq.test(email[0].value)) {
-			alert("µç×ÓÓÊ¼şµØÖ·¸ñÊ½²»ÕıÈ·!");
+			alert("ç”µå­é‚®ä»¶åœ°å€æ ¼å¼ä¸æ­£ç¡®!");
 			return false;
 		}
 		var province = document.getElementsByName('distract');
 		if (province[0].value == 0) {
-				alert("ÇëÑ¡ÔñÊ¡·İ");
+				alert("è¯·é€‰æ‹©çœä»½");
 				return false;
 			}
 			//return true;
@@ -82,103 +82,103 @@ a:hover{text-decoration:underline; color:#FF6633}
 <TABLE align="center" class="main">
 <TR>
   <TD >
-»¶Ó­ÄúÉêÇëÃâ·ÑQQºÅÂë£¬ÉêÇë¹ı³Ì½«²»»áÊÕÈ¡ÄúÈÎºÎ·ÑÓÃ¡£ÎÒÃÇ³ĞÅµ±£»¤ÄúµÄĞÅÏ¢°²È«,²»»á½«ËüÌá¹©¸øÈÎºÎµÚÈı·½¡£<BR>
-×¢£º<FONT color="red">*</FONT>Îª±ØÌîÄÚÈİ
+æ¬¢è¿æ‚¨ç”³è¯·å…è´¹QQå·ç ï¼Œç”³è¯·è¿‡ç¨‹å°†ä¸ä¼šæ”¶å–æ‚¨ä»»ä½•è´¹ç”¨ã€‚æˆ‘ä»¬æ‰¿è¯ºä¿æŠ¤æ‚¨çš„ä¿¡æ¯å®‰å…¨,ä¸ä¼šå°†å®ƒæä¾›ç»™ä»»ä½•ç¬¬ä¸‰æ–¹ã€‚<BR>
+æ³¨ï¼š<FONT color="red">*</FONT>ä¸ºå¿…å¡«å†…å®¹
   </TD>
 </TR>
-<TR><TD><H1>ÄúµÄÕÊ»§ĞÅÏ¢</H1></TD></TR>
+<TR><TD><H1>æ‚¨çš„å¸æˆ·ä¿¡æ¯</H1></TD></TR>
 <TR>
   <TD>
 	<TABLE width="514" align="center">
 		<TR>
-			<TD width="108" align="right" > <SPAN class="STYLE1">*</SPAN> êÇ³Æ£º </TD>
+			<TD width="108" align="right" > <SPAN class="STYLE1">*</SPAN> æ˜µç§°ï¼š </TD>
 			<TD width="394"><INPUT type="text" name="txtUser" size="30" id="input1"></TD>
 		</TR>
 		<TR><TD>&nbsp;</TD>
-		<TD  >Ó¢ÎÄ×ÖÄ¸£¬Êı×Ö»òÕßÏÂ»®Ïß£¬³¤¶ÈÎª4-16¸ö×Ö·û</TD>
+		<TD  >è‹±æ–‡å­—æ¯ï¼Œæ•°å­—æˆ–è€…ä¸‹åˆ’çº¿ï¼Œé•¿åº¦ä¸º4-16ä¸ªå­—ç¬¦</TD>
 		</TR>
 		<TR>
-			<TD width="108" align="right" > <SPAN class="STYLE1">*</SPAN> ÃÜÂë£º </TD>
+			<TD width="108" align="right" > <SPAN class="STYLE1">*</SPAN> å¯†ç ï¼š </TD>
 			<TD width="394"><INPUT type="password" name="txtPass"size="30"></TD>
 		</TR>
 		<TR><TD>&nbsp;</TD>
-		<TD >6-16¸ö×Ö·û×é³É×ÖÄ¸»òÊı×Ö×é³É</TD>
+		<TD >6-16ä¸ªå­—ç¬¦ç»„æˆå­—æ¯æˆ–æ•°å­—ç»„æˆ</TD>
 		</TR>
 		<TR>
-			 <TD align="right"><SPAN class="STYLE1">*</SPAN> ÖØĞÂÊäÈëÃÜÂë£º</TD>
+			 <TD align="right"><SPAN class="STYLE1">*</SPAN> é‡æ–°è¾“å…¥å¯†ç ï¼š</TD>
 			 <TD><INPUT name="txtRPass" type="password"  ></TD>
 		</TR>
 		
 	</TABLE>  
 	</TD>
  </TR>
-<TR><TD><H1>ÄúµÄ¸öÈËĞÅÏ¢</H1></TD></TR>
+<TR><TD><H1>æ‚¨çš„ä¸ªäººä¿¡æ¯</H1></TD></TR>
 <TR>
   <TD>
   	<TABLE width="514" align="center">
 		<TR>
-			 <TD width="110" align="right"> <SPAN class="STYLE1">*</SPAN> ³öÉúÈÕÆÚ£º </TD>
+			 <TD width="110" align="right"> <SPAN class="STYLE1">*</SPAN> å‡ºç”Ÿæ—¥æœŸï¼š </TD>
 		    <TD width="392"><INPUT name="txtBirth" type="text" maxlength="10">
-		    ÈÕÆÚ¸ñÊ½yyyy-mm-dd</TD>
+		    æ—¥æœŸæ ¼å¼yyyy-mm-dd</TD>
 		</TR>
 		<TR>
-			  <TD  align="right"> ĞÔ±ğ£º</TD>
+			  <TD  align="right"> æ€§åˆ«ï¼š</TD>
 			  <TD><INPUT name="sex" type="radio" value="male" checked="checked">
-			  ÄĞ<INPUT name="sex" type="radio" value="fmale">
-			  Å®</TD>
+			  ç”·<INPUT name="sex" type="radio" value="fmale">
+			  å¥³</TD>
 		</TR>
 		<TR>
-			  <TD  align="right"><SPAN class="STYLE1">*</SPAN>µç×ÓÓÊ¼şµØÖ·£º</TD>
+			  <TD  align="right"><SPAN class="STYLE1">*</SPAN>ç”µå­é‚®ä»¶åœ°å€ï¼š</TD>
 			  <TD><INPUT name="txtEmail" type="text" ></TD>
 		</TR>
 	</TABLE>  
   </TD>
 </TR>
-<TR><TD><H1>ËùÔÚµØÇø</H1></TD></TR>
+<TR><TD><H1>æ‰€åœ¨åœ°åŒº</H1></TD></TR>
 <TR>
   <TD>
   	<TABLE width="514" align="center">
 		<TR>
-			<TD width="113" align="right" > ¹ú¼Ò£º </TD>
+			<TD width="113" align="right" > å›½å®¶ï¼š </TD>
 			<TD width="389"><SELECT name="national">
-			  <OPTION value="1" selected>ÖĞ»ªÈËÃñ¹²ºÍ¹ú</OPTION>
-			  <OPTION value="2">ÆäËû¹ú¼ÒºÍµØÇø</OPTION>
+			  <OPTION value="1" selected>ä¸­åäººæ°‘å…±å’Œå›½</OPTION>
+			  <OPTION value="2">å…¶ä»–å›½å®¶å’Œåœ°åŒº</OPTION>
 			</SELECT></TD>
 		</TR>
-		<TR><TD align="right">Ê¡·İ£º</TD>
+		<TR><TD align="right">çœä»½ï¼š</TD>
 		<TD >
 			<SELECT name="distract">
-			  <OPTION value="0" selected>ÇëÑ¡Ôñ</OPTION>
-			  <OPTION value="1">±±¾©</OPTION>
-			  <OPTION value="2">Ìì½ò</OPTION>
-			  <OPTION value="3">ÉÏº£</OPTION>
-			  <OPTION value="4">ÖØÇì</OPTION>
-			  <OPTION value="5">¶«±±</OPTION>
-			  <OPTION value="6">Î÷±±</OPTION>
-			  <OPTION value="7">»ª±±</OPTION>
+			  <OPTION value="0" selected>è¯·é€‰æ‹©</OPTION>
+			  <OPTION value="1">åŒ—äº¬</OPTION>
+			  <OPTION value="2">å¤©æ´¥</OPTION>
+			  <OPTION value="3">ä¸Šæµ·</OPTION>
+			  <OPTION value="4">é‡åº†</OPTION>
+			  <OPTION value="5">ä¸œåŒ—</OPTION>
+			  <OPTION value="6">è¥¿åŒ—</OPTION>
+			  <OPTION value="7">ååŒ—</OPTION>
 			</SELECT>
 		</TD>
 		</TR>
 	</TABLE>  
   </TD>
 </TR>
-<TR><TD><H1>Ïà¹Ø·şÎñÌõ¿î</H1></TD></TR>
+<TR><TD><H1>ç›¸å…³æœåŠ¡æ¡æ¬¾</H1></TD></TR>
 <TR>
   <TD>
   	<TABLE width="665">
 		<TR>
-			<TD style="padding-left:10px"><INPUT name="ckAgree" type="checkbox" value="yes" checked="checked">ÎÒÍ¬ÒâÒÔÏÂÌõ¿î</TD>
+			<TD style="padding-left:10px"><INPUT name="ckAgree" type="checkbox" value="yes" checked="checked">æˆ‘åŒæ„ä»¥ä¸‹æ¡æ¬¾</TD>
 	
 		</TR>
 		<TR><TD>
 			<UL >
-			<LI><A href="#">ÌÚÑ¶QQÓÃ»§·şÎñÌõ¿î</A></LI>
-			<LI>±¾×ÅÓĞĞ§ÀûÓÃQQºÅÂë×ÊÔ´£¬±£ÕÏ¸ü¶àºÏ·¨ÓÃ»§È¨ÒæÎªÄ¿µÄ£¬¶ÔÓÚ¶ñÒâ×¢²á»òÕß³¤ÆÚ²»µÇÂ¼µÄQQºÅÂë£¬ÏµÍ³ÓĞÈ¨»ØÊÕ¡£</LI>
-			<LI>ÌÚÑ¶¹«Ë¾¾ßÓĞ¶ÔÒÔÉÏÌõ¿îÄÚÈİµÄ×îÖÕ½âÊÍÈ¨¡£ </LI>
+			<LI><A href="#">è…¾è®¯QQç”¨æˆ·æœåŠ¡æ¡æ¬¾</A></LI>
+			<LI>æœ¬ç€æœ‰æ•ˆåˆ©ç”¨QQå·ç èµ„æºï¼Œä¿éšœæ›´å¤šåˆæ³•ç”¨æˆ·æƒç›Šä¸ºç›®çš„ï¼Œå¯¹äºæ¶æ„æ³¨å†Œæˆ–è€…é•¿æœŸä¸ç™»å½•çš„QQå·ç ï¼Œç³»ç»Ÿæœ‰æƒå›æ”¶ã€‚</LI>
+			<LI>è…¾è®¯å…¬å¸å…·æœ‰å¯¹ä»¥ä¸Šæ¡æ¬¾å†…å®¹çš„æœ€ç»ˆè§£é‡Šæƒã€‚ </LI>
 			</UL>
 		</TD>
 		</TR>
-		<TR><TD align="center"><INPUT type="submit" name="submit" value="Ìá½»×¢²á" ></TD></TR>
+		<TR><TD align="center"><INPUT type="submit" name="submit" value="æäº¤æ³¨å†Œ" ></TD></TR>
 	</TABLE> 
 	
   </TD>
