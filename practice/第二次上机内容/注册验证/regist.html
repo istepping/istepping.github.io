@@ -13,11 +13,69 @@ a:hover{text-decoration:underline; color:#FF6633}
 </STYLE>
 <SCRIPT>
 //需要在此填写
+	function checkForm() {
+		var username = document.getElementsByName('txtUser');
+		var usernameReq = /\w{4,16}/;
+		//console.log(username[0].value);
+		if (username[0].value == "" || username[0].value.length == 0) {
+			alert("请输入用户名！");
+			return false;
+		}
+		if (!usernameReq.test(username[0].value)) {
+			alert("用户名格式不正确！");
+			return false;
+		}
+		var password1 = document.getElementsByName('txtPass');
+		var passwordReq = /[a-zA-Z0-9]{6,16}/;
+		if (password1[0].value == "" || password1[0].value.length == 0) {
+			alert("请输入密码");
+			return false;
+		}
+		if (!passwordReq.test(password1[0].value)) {
+			alert("密码格式不正确!");
+			return false;
+		}
+		var password2 = document.getElementsByName('txtRPass')
+		if (password2[0].value == "" || password2[0].value.length == 0) {
+				alert("请再次输入密码");
+				return false;
+			}
+		if (password1[0].value != password2[0].value) {
+				alert("两次输入的密码不一致");
+				return false;
+			}
+		var birthday = document.getElementsByName('txtBirth');
+		var birthdayReq = /[1-9]\d{3}[-]\d{2}[-]\d{2}/;
+		if (birthday[0].value == "" || birthday[0].value.length == 0) {
+			alert("请输入出生日期");
+			return false;
+		}
+		if (!birthdayReq.test(birthday[0].value)) {
+			alert("出生日期格式不正确!");
+			return false;
+		}
+		var email = document.getElementsByName('txtEmail');
+		var emailReq =  /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
+		if (email[0].value == "" || email[0].value.length == 0) {
+				alert("请输入电子邮件地址");
+				return false;
+			}
+		if (!emailReq.test(email[0].value)) {
+			alert("电子邮件地址格式不正确!");
+			return false;
+		}
+		var province = document.getElementsByName('distract');
+		if (province[0].value == 0) {
+				alert("请选择省份");
+				return false;
+			}
+			//return true;
+		}
 </SCRIPT>
 </HEAD>
 
 <BODY>
-<FORM action="success.html" method="get" name="myform" onSubmit="return checkForm()">
+<FORM action="success2.html" method="get" name="myform" onSubmit="return checkForm()">
 <TABLE  width="100%"  border="0" cellspacing="0" cellpadding="0">
   <TR><TD><IMG src="images/top.jpg"></TD></TR>
 </TABLE>
@@ -34,7 +92,7 @@ a:hover{text-decoration:underline; color:#FF6633}
 	<TABLE width="514" align="center">
 		<TR>
 			<TD width="108" align="right" > <SPAN class="STYLE1">*</SPAN> 昵称： </TD>
-			<TD width="394"><INPUT type="text" name="txtUser"size="30"></TD>
+			<TD width="394"><INPUT type="text" name="txtUser" size="30" id="input1"></TD>
 		</TR>
 		<TR><TD>&nbsp;</TD>
 		<TD  >英文字母，数字或者下划线，长度为4-16个字符</TD>
@@ -90,7 +148,7 @@ a:hover{text-decoration:underline; color:#FF6633}
 		<TR><TD align="right">省份：</TD>
 		<TD >
 			<SELECT name="distract">
-			  <OPTION selected>请选择</OPTION>
+			  <OPTION value="0" selected>请选择</OPTION>
 			  <OPTION value="1">北京</OPTION>
 			  <OPTION value="2">天津</OPTION>
 			  <OPTION value="3">上海</OPTION>

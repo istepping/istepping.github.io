@@ -42,6 +42,29 @@ a:hover {text-decoration:underline; font-size:12px; color:#FF0000}
 
 <SCRIPT type="text/javascript">
 //需要再次填写js内容
+function checkLogin() {
+    var QQcode = document.getElementsByName('txtCode');
+    console.log(QQcode[0].value);
+    if (QQcode[0].value == "" || QQcode[0].value.length == 0) {
+        alert("请输入QQ号码");
+        return false;
+    }
+    var QQpass = document.getElementsByName('txtPass');
+    if (QQpass[0].value == "" || QQpass[0].value.length == 0) {
+        alert("请输入QQ密码");
+        return false;
+    }
+    var verify = document.getElementsByName('txtVerify');
+    var verReg = /[a-z]{4}/i;
+    if(!verReg.test(verify[0].value)){
+        alert("验证码格式错误！");
+        return false;
+    }
+    if (verify[0].value!="cmmz") {
+        alert("验证码错误！");
+        return false;
+    }
+}
 </SCRIPT>
 </HEAD>
 
@@ -51,7 +74,7 @@ a:hover {text-decoration:underline; font-size:12px; color:#FF0000}
 </DIV>
 
 <DIV align="center">
-  <FORM action="success.html" method="post" name="myform">
+  <FORM action="success.html" method="post" name="myform" onsubmit="return checkLogin()">
   <TABLE>
     <TR>
       <TD width="418" style="padding-top:30px">
@@ -77,7 +100,7 @@ a:hover {text-decoration:underline; font-size:12px; color:#FF0000}
           <TR><TD height="42">&nbsp;</TD>
        <TD ><A href="#" >看不清，换一张 </A></TD></TR>
           <TR><TD height="71" colspan="2" align="center"><IMG src="images/code.jpg"></TD></TR>
-          <TR><TD colspan="2" align="center"><IMG src="images/login_submit.gif" onClick="checkLogin()"></TD></TR>
+          <TR><TD colspan="2" align="center"><input type="image" src="images/login_submit.gif"></TD></TR>
           </TABLE>     
 		</TD>
      <TD width="320" style="padding-top:10px"><IMG src="images/right.jpg"></TD>
