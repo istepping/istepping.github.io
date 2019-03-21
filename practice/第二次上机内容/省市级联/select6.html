@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>动态添加下拉列表内容</TITLE>
+<SCRIPT type="text/javascript">
+	//需要在此填写
+
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<FORM action="" method="get" name="myform"  >
+<TABLE width="381" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD colspan="2"><IMG src="images/top.jpg"></TD>
+    </TR>
+  <TR>
+    <TD width="351" align="right">国家：</TD>
+    <TD width="642">
+	<SELECT name="country" onChange="showCity()">
+	  <OPTION>--请选择所属国家--</OPTION>
+	  <OPTION value="中国">中国</OPTION>
+	  <OPTION value="美国">美国</OPTION>
+	  <OPTION value="英国">英国</OPTION>
+	</SELECT>
+	</TD>
+  </TR>
+  <TR>
+    <TD align="right">省份/地区:</TD>
+    <TD >
+	<SELECT name="cityList">
+	  <OPTION>--请选择所在省份和地区--</OPTION>
+	</SELECT>
+	</TD>
+  </TR>
+  <TR>
+    <TD colspan="2"><IMG  src="images/foot.jpg"></TD>
+   </TR>
+   <TR><TD align="center" colspan="2"><INPUT type="button" name="submit" value="提交注册" ></TD></TR>
+</TABLE>
+
+</FORM>
+</BODY>
+</HTML>

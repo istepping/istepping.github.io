@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>图片的切换效果</TITLE>
+<STYLE  type="text/css">
+td{ font-size:12px}
+</STYLE>
+<SCRIPT language="javascript">
+//需要在此填写
+    function TabChange(left,right) {
+        if(left==="mobile"){
+            document.getElementById("game").setAttribute("src","images/game1.jpg");
+            document.getElementById("mobile").setAttribute("src","images/mobile2.jpg");
+            document.getElementById("content").setAttribute("src","images/phone.jpg");
+        }else{
+            document.getElementById("game").setAttribute("src","images/game2.jpg");
+            document.getElementById("mobile").setAttribute("src","images/mobile1.jpg");
+            document.getElementById("content").setAttribute("src","images/card1.jpg");
+        }
+    }
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<TABLE border="0" align="center" cellpadding="0" cellspacing="0">
+  <TR>
+    <TD><IMG src="images/game1.jpg" id="game" onMouseOver="TabChange('game','mobile')" ><IMG src="images/mobile2.jpg" id="mobile" onMouseOver="TabChange('mobile','game')"></TD>
+  </TR>
+<TR>
+    <TD colspan="2"><IMG id="content" src="images/phone.jpg" ></TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>

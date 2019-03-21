@@ -1,0 +1,143 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>专业产品-中国天气网</title>
+    <link type="text/css" href="css/product_2016.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+    <style type="text/css">
+        /*播放时的按钮不单独显示*/
+        .dis{display:none}
+        .mainContent{width:1000px;margin:0 auto;position:relative;z-index:1}
+        /*背景浅蓝色底板*/
+        .mainContent .contentBg{width:100%;float:left;background:#e6f4ff}
+        /*图片放置在背景底板右侧*/
+        .mainContent .contentBg .rightContent{width:786px;float:right;position:relative;padding:23px 8px 23px 0}
+        /*显示图片元素*/
+        .picContent{width:100%;height:auto}
+        .picContent img{width:786px;height:460px;display:none}
+        .picContent .showImg{display:block}
+        /*控制台按钮*/
+        .playDiv{width:100%;height:36px;background:#043567;line-height:36px}
+        .playDiv .btnDiv{width:36px;height:36px;float:left;margin-right:5px}
+        .playDiv .playBtn{margin-top:5px;margin-left:5px;height:25px;width:25px;background-position:-85px 0}
+        .playDiv .stopBtn{margin-top:6px;margin-left:5px;height:25px;width:25px;background-position:-60px 0}
+        .playDiv .infoDiv{height:36px;float:left;color:#fff;margin-right:10px;font-size:12px}
+        /*三个长方形按钮*/
+        .playDiv .playStaLi a{height:6px;float:left;margin-top:15px;_margin-top:8px;background:#5a82ab;cursor:pointer}
+        /*鼠标移动到按钮上的时候为白色*/
+        .playDiv .playStaLi a:hover{background:#fff}
+        .playDiv .playStaLi .cur{background:#f29143!important}
+        .playDiv .playStaLi02 a{margin-left:10px;width:40px}
+        .playDiv .playStaLi03 a{margin-right:4px;width:36px}
+        .playDiv .playStaLi24 a{margin-left:3px;width:21px}
+        /*播放键*/
+        .imgBtns{background-image:url(http://i.tq121.com.cn/i/product_2016/imgBtns.png);background-repeat:no-repeat}
+    </style>
+    <script type="text/javascript">
+        var ELE = {
+            img: $(".picContent a img"),
+            btn_choose: $("#btn_group a"),
+            btn_play: $("#playBtn"),
+            info: $(".infoDiv")
+        };
+        var TIMEMSG = ['24小时', '48小时', '72小时'];
+        var SETTIME = 500;
+        var PLAY = false;
+
+        function swiper(num) {
+            //1变换图片
+            //2改变文字
+            //3变换按钮
+            ELE.img.removeClass('showImg');
+            ELE.img.eq(num).addClass('showImg');
+
+            ELE.btn_choose.removeClass('cur');
+            ELE.btn_choose.eq(num).addClass('cur');
+
+            ELE.info.html(TIMEMSG[num]);
+        }
+
+        function play(num) {
+
+            var n = num;
+            var t = SETTIME;
+            PLAY = true;
+
+            swiper(n);
+            n++;
+            if (n >= 3) {
+                setTimeout(function() {
+                    swiper(0);
+                    ELE.btn_play.removeClass('stopBtn').addClass('playBtn');
+                    PLAY = false;
+                    console.log(PLAY)
+                }, t)
+                return
+            }
+            setTimeout(function() {
+
+                play(n);
+            }, t)
+        }
+
+        ELE.btn_choose.on("click", function(e) {
+            if (!PLAY) {
+                var num = $(this).attr('data-type');
+                swiper(num);
+            }
+
+        });
+
+        ELE.btn_play.on("click", function(e) {
+            if (!PLAY) {
+                $(this).removeClass('playBtn').addClass('stopBtn');
+                play(0);
+            }
+        });
+
+
+    </script>
+</head>
+
+<body>
+<div style="min-height:1000px">
+    <!-- 主体部分 start -->
+    <div class="mainContent">
+        <div class="contentBg">
+            <!-- 右边内容部分 start -->
+            <div class="rightContent">
+                <!-- 雷达图展示 start-->
+                <div class="picContent">
+                    <a href="http://pi.weather.com.cn/i/product/pic/l/sevp_nmc_stfc_sfer_er24_achn_l88_p9_20180228070002400.jpg" target="_blank">
+                        <img src="http://pi.weather.com.cn/i/product/pic/l/sevp_nmc_stfc_sfer_er24_achn_l88_p9_20190320130004800.jpg" class="showImg" style="width:757px;height:615px;"></a>
+                    <a href="http://pi.weather.com.cn/i/product/pic/l/sevp_nmc_stfc_sfer_er24_achn_l88_p9_20180228010004800.jpg" target="_blank">
+                        <img src="hhttp://pi.weather.com.cn/i/product/pic/l/sevp_nmc_stfc_sfer_er24_achn_l88_p9_20190320130007200.jpg" style="width:757px;height:615px;"></a>
+                    <a href="http://pi.weather.com.cn/i/product/pic/l/sevp_nmc_stfc_sfer_er24_achn_l88_p9_20180228010007200.jpg" target="_blank">
+                        <img src="http://pi.weather.com.cn/i/product/pic/l/sevp_nmc_stfc_sfer_er24_achn_l88_p9_20190320130002400.jpg" style="width:757px;height:615px;"></a>
+                </div>
+                <!-- 雷达图展示 end-->
+                <!-- 控制台 begin-->
+                <div class="playDiv">
+                    <div class="btnDiv imgBtns playBtn" id="playBtn"></div>
+                    <div class="btnDiv imgBtns stopBtn dis"></div>
+                    <div class="playStaLi playStaLi03">
+                        <!-- 如果是数值产品和实验应用产品 -->
+                        <!-- 控制台文字 -->
+                        <div class="infoDiv " style="width:68px;text-align:center;">24小时</div>
+                        <!-- 控制台按钮 -->
+                        <div id="btn_group" style="overflow:hidden">
+                            <a class="cur" data-type="0"></a>
+                            <a data-type="1"></a>
+                            <a data-type="2"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边内容部分 end -->
+        </div>
+    </div>
+    <!--主体部分end-->
+    <!--轮播-->
+    <script type="text/javascript" src="js/index.js"></script>
+</div>
+</body>
+</html>

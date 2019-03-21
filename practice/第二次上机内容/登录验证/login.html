@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+
+<TITLE>图片代替按钮提交</TITLE> 
+
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK rel="stylesheet" type="text/css" href="../css/public.css">
+
+
+<LINK rel="stylesheet" type="text/css" href="../css/public.css">  
+<STYLE type="text/css">
+td{ font-size:12px; font-family:Verdana}
+.lefttd {text-align:right; padding-right:20px; font-family:"新宋体"}
+a {text-decoration:none; font-size:12px; color:#0000FF}
+a:hover {text-decoration:underline; font-size:12px; color:#FF0000}
+
+.loginMain {
+	border:1px solid #57A0ED;
+	padding-bottom:10px;
+	background:#EEF5FF;
+	margin-bottom:25px
+}
+.inputMain {
+	border:1px solid #718DA6;
+	height:17px;
+	padding:2px 0 0 4px;
+	width:160px
+}
+.loginHead {
+	padding-left:50px; 
+	background-image:url(images/login_head.gif);
+	padding-top:14px; 
+	height:27px;
+	line-height:4px;
+	font-size:13px;
+	color:#fff;
+	font-weight:bold
+}
+
+</STYLE>
+
+<SCRIPT type="text/javascript">
+//需要再次填写js内容
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<DIV id="head" align="center">
+  <IMG src="images/top.jpg">
+</DIV>
+
+<DIV align="center">
+  <FORM action="success.html" method="post" name="myform">
+  <TABLE>
+    <TR>
+      <TD width="418" style="padding-top:30px">
+        <TABLE width="381" cellpadding="0" cellspacing="0" class="loginMain" align="center">
+          <TR>
+            <TD colspan="2" height="27" class="loginHead">拍拍用户登陆</TD>
+       </TR>
+          <TR>
+            <TD width="97" class="lefttd">QQ号码:</TD>
+        <TD width="282">
+          <INPUT type="text" class="inputMain"  name="txtCode"> <A href="#" >忘记QQ号码&gt;&gt;</A></TD>
+       </TR>
+          <TR>
+            <TD class="lefttd">QQ密码:</TD>
+	    <TD><INPUT type="password" class="inputMain" name="txtPass" >	<A href="#">忘记密码&gt;&gt;</A></TD>
+	   </TR>
+          <TR>
+            <TD width="97" class="lefttd">验证码:</TD>
+        <TD width="282">
+			<INPUT type="text" class="inputMain" name="txtVerify" value="请输入下图显示的文字" onFocus="this.value=''">
+		 </TD>
+       </TR>
+          <TR><TD height="42">&nbsp;</TD>
+       <TD ><A href="#" >看不清，换一张 </A></TD></TR>
+          <TR><TD height="71" colspan="2" align="center"><IMG src="images/code.jpg"></TD></TR>
+          <TR><TD colspan="2" align="center"><IMG src="images/login_submit.gif" onClick="checkLogin()"></TD></TR>
+          </TABLE>     
+		</TD>
+     <TD width="320" style="padding-top:10px"><IMG src="images/right.jpg"></TD>
+   </TR>
+  </TABLE>
+  </FORM>
+</DIV>
+<DIV id="foot">
+<IMG src="images/foot.jpg">
+</DIV> 
+</BODY>
+</HTML>

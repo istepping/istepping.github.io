@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+
+<TITLE>登陆</TITLE> 
+
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK rel="stylesheet" type="text/css" href="../css/public.css">
+
+
+<LINK rel="stylesheet" type="text/css" href="../css/public.css">  
+<STYLE type="text/css">
+td{ font-size:12px; font-family:Verdana}
+.lefttd {text-align:right; padding-right:20px; font-family:"新宋体"}
+a {text-decoration:none; font-size:12px; color:#0000FF}
+a:hover {text-decoration:underline; font-size:14px; color:#FF0000}
+
+.loginMain {
+	border:1px solid #57A0ED;
+	padding-bottom:10px;
+	background:#EEF5FF;
+	margin-bottom:25px
+}
+.inputMain {
+	border:1px solid #718DA6;
+	height:17px;
+	padding:2px 0 0 4px;
+	width:120px
+}
+.loginHead {
+	padding-left:50px; 
+	background-image:url(images/login_head.gif);
+	padding-top:14px; 
+	height:27px;
+	line-height:4px;
+	font-size:13px;
+	color:#fff;
+	font-weight:bold
+}
+
+</STYLE>
+
+<SCRIPT type="text/javascript">
+function checkLogin(){
+	var loginCode = document.myform.txtCode.value;
+	var pass = document.myform.txtPass.value;
+	var verify = document.myform.txtVerify.value;
+	if(loginCode==""){
+		alert("请输入QQ号码");
+		document.myform.txtCode.focus();
+	}else if(pass==""){
+		alert("请输入QQ密码");
+		document.myform.txtPass.focus();
+	}else if(verify==""){
+		alert("请输入验证码");
+		document.myform.txtVerify.focus();
+	}else{
+		document.myform.submit();	
+	}
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<DIV id="head" align="center">
+  <IMG src="images/top.jpg">
+</DIV>
+
+<DIV align="center">
+  
+  <TABLE>
+    <TR>
+	  <td height="100">
+		<h2>登录成功,您现在可以在拍拍网尽情选购您喜欢的商品了</h2>
+	  </td>
+ 	</TR>
+  </TABLE>
+</DIV>
+<DIV id="foot">
+<IMG src="images/foot.jpg">
+</DIV> 
+</BODY>
+</HTML>

@@ -1,0 +1,131 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<TITLE>用户注册</TITLE>
+<STYLE type="text/css">
+td{font-size:12px}
+h1{ font-size:12px;background:#F4FBFF}
+a{
+	color:#0E69C7; text-decoration:none;
+}
+a:hover{text-decoration:underline; color:#FF6633}
+.STYLE1 {color: #FF0000}
+</STYLE>
+<SCRIPT>
+//需要在此填写
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<FORM action="success.html" method="get" name="myform" onSubmit="return checkForm()">
+<TABLE  width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <TR><TD><IMG src="images/top.jpg"></TD></TR>
+</TABLE>
+<TABLE align="center" class="main">
+<TR>
+  <TD >
+欢迎您申请免费QQ号码，申请过程将不会收取您任何费用。我们承诺保护您的信息安全,不会将它提供给任何第三方。<BR>
+注：<FONT color="red">*</FONT>为必填内容
+  </TD>
+</TR>
+<TR><TD><H1>您的帐户信息</H1></TD></TR>
+<TR>
+  <TD>
+	<TABLE width="514" align="center">
+		<TR>
+			<TD width="108" align="right" > <SPAN class="STYLE1">*</SPAN> 昵称： </TD>
+			<TD width="394"><INPUT type="text" name="txtUser"size="30"></TD>
+		</TR>
+		<TR><TD>&nbsp;</TD>
+		<TD  >英文字母，数字或者下划线，长度为4-16个字符</TD>
+		</TR>
+		<TR>
+			<TD width="108" align="right" > <SPAN class="STYLE1">*</SPAN> 密码： </TD>
+			<TD width="394"><INPUT type="password" name="txtPass"size="30"></TD>
+		</TR>
+		<TR><TD>&nbsp;</TD>
+		<TD >6-16个字符组成字母或数字组成</TD>
+		</TR>
+		<TR>
+			 <TD align="right"><SPAN class="STYLE1">*</SPAN> 重新输入密码：</TD>
+			 <TD><INPUT name="txtRPass" type="password"  ></TD>
+		</TR>
+		
+	</TABLE>  
+	</TD>
+ </TR>
+<TR><TD><H1>您的个人信息</H1></TD></TR>
+<TR>
+  <TD>
+  	<TABLE width="514" align="center">
+		<TR>
+			 <TD width="110" align="right"> <SPAN class="STYLE1">*</SPAN> 出生日期： </TD>
+		    <TD width="392"><INPUT name="txtBirth" type="text" maxlength="10">
+		    日期格式yyyy-mm-dd</TD>
+		</TR>
+		<TR>
+			  <TD  align="right"> 性别：</TD>
+			  <TD><INPUT name="sex" type="radio" value="male" checked="checked">
+			  男<INPUT name="sex" type="radio" value="fmale">
+			  女</TD>
+		</TR>
+		<TR>
+			  <TD  align="right"><SPAN class="STYLE1">*</SPAN>电子邮件地址：</TD>
+			  <TD><INPUT name="txtEmail" type="text" ></TD>
+		</TR>
+	</TABLE>  
+  </TD>
+</TR>
+<TR><TD><H1>所在地区</H1></TD></TR>
+<TR>
+  <TD>
+  	<TABLE width="514" align="center">
+		<TR>
+			<TD width="113" align="right" > 国家： </TD>
+			<TD width="389"><SELECT name="national">
+			  <OPTION value="1" selected>中华人民共和国</OPTION>
+			  <OPTION value="2">其他国家和地区</OPTION>
+			</SELECT></TD>
+		</TR>
+		<TR><TD align="right">省份：</TD>
+		<TD >
+			<SELECT name="distract">
+			  <OPTION selected>请选择</OPTION>
+			  <OPTION value="1">北京</OPTION>
+			  <OPTION value="2">天津</OPTION>
+			  <OPTION value="3">上海</OPTION>
+			  <OPTION value="4">重庆</OPTION>
+			  <OPTION value="5">东北</OPTION>
+			  <OPTION value="6">西北</OPTION>
+			  <OPTION value="7">华北</OPTION>
+			</SELECT>
+		</TD>
+		</TR>
+	</TABLE>  
+  </TD>
+</TR>
+<TR><TD><H1>相关服务条款</H1></TD></TR>
+<TR>
+  <TD>
+  	<TABLE width="665">
+		<TR>
+			<TD style="padding-left:10px"><INPUT name="ckAgree" type="checkbox" value="yes" checked="checked">我同意以下条款</TD>
+	
+		</TR>
+		<TR><TD>
+			<UL >
+			<LI><A href="#">腾讯QQ用户服务条款</A></LI>
+			<LI>本着有效利用QQ号码资源，保障更多合法用户权益为目的，对于恶意注册或者长期不登录的QQ号码，系统有权回收。</LI>
+			<LI>腾讯公司具有对以上条款内容的最终解释权。 </LI>
+			</UL>
+		</TD>
+		</TR>
+		<TR><TD align="center"><INPUT type="submit" name="submit" value="提交注册" ></TD></TR>
+	</TABLE> 
+	
+  </TD>
+</TR>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>
